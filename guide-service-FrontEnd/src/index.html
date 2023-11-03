@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>In-memory User Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-danger" href="#" id="btnDashboard">Guide Admin DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-info" aria-current="page" href="#customerform"
+                       id="btnCustomer">Guide Admin DashBoard</a>
+                </li>
+
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" id="txtguidesearch" placeholder="Search" aria-label="Search">
+
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<!--Customer Form-->
+
+<div class="container-fluid mt-5" id="guideform">
+    <h1 class="mx-3">Guide Form</h1>
+    <div class="row mt-3 p-3">
+        <div class="col-xl-25 col-lg-18">
+            <div class="bg-white card">
+                <div class="bg-dark card-header text-white" style="font-size: 25px">
+                    Guide Details
+                </div>
+                <div class="card-body bg-white text-dark">
+                    <div class="row p-3 mt-3">
+                        <div class="form-group col-6">
+                            <lable> Guide ID:</lable>
+                            <input type="text" id="txtguideid0" class="form-control" >
+
+                        </div>
+                        <div class="form-group col-6">
+                            <lable>Guide Name :</lable>
+                            <input type="text" id="txtguideName0" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Guide Address:</lable>
+                            <input type="text" id="txtguideAddress0" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Guide Age:</lable>
+                            <input type="text" id="txtGuideAge" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Gender:</lable>
+                            <input type="text" id="txtgender" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Guide Contact NO:</lable>
+                            <input type="text" id="txtfGuidecontact" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <label for="txtGuideImage0" class="form-label "> Guide Image</label>
+                            <input style="border: 1px solid gray" class="form-control  " type="file" id="txtGuideImage0">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <label for="txtGuideNicImage0" class="form-label "> Guide NIC Image</label>
+                            <input style="border: 1px solid gray" class="form-control  " type="file" id="txtGuideNicImage0">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Exeprience:</lable>
+                            <input type="text" id="txtguideExeprience0" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Man Day Value:</lable>
+                            <input type="text" id="txtManDAyValue0" class="form-control">
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <button type="button" class="btn btn-outline-success fw-bold" id="btnGuidedAdd">Add</button>
+                            <button type="button" class="btn btn-outline-warning fw-bold" id="btnguideUpdate">UPDATE</button>
+                            <button type="button" class="btn btn-outline-danger fw-bold" id="btnguideDelete">DELETE</button>
+                            <button type="button" class="btn btn-warning fw-bold" id="btnguideGetAll">GetAll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="bootstrap/js/jquery/jquery-3.6.0.js"></script>
+<script src="js/guidehandleform.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

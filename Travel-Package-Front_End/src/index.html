@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>In-memory User Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-danger" href="#" id="btnDashboard">Travel Package Admin DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-info" aria-current="page" href="#travelpkgform"
+                       id="btnCustomer">Travel Package Form</a>
+                </li>
+
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" id="txtguidesearch" placeholder="Search" aria-label="Search">
+
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<!--Customer Form-->
+
+<div class="container-fluid mt-5" id="guideform">
+    <h1 class="mx-3">Travel Package Form</h1>
+    <div class="row mt-3 p-3">
+        <div class="col-xl-25 col-lg-8">
+            <div class="bg-white card">
+                <div class="bg-dark card-header text-white" style="font-size: 25px">
+                   Travel Package Details
+                </div>
+                <div class="card-body bg-white text-dark">
+                    <div class="row p-3 mt-3">
+                        <div class="form-group col-6">
+                            <lable> Travel Package ID:</lable>
+                            <input type="text" id="txtpackageid0" class="form-control" >
+
+                        </div>
+                        <div class="form-group col-6">
+                            <lable>Travel Package Category :</lable>
+                            <input type="text" id="txtpackagecategory0" class="form-control">
+
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Travel Package Areas:</lable>
+                            <input type="text" id="txtpackageAreas0" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Select Guide ID:</lable>
+                            <select class="form-control" id="cmbGuideID">
+                                <option selected="selected" disabled="disabled">-Select Guide-</option>
+                                <span class="control-error" id="lblGuideID"></span>
+                            </select>
+                        </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Select Vehicle ID:</lable>
+                            <select class="form-control" id="cmbVehicleID">
+                                <option selected="selected" disabled="disabled">-Select Vehicle-</option>
+                                <span class="control-error" id="lblVehicleID"></span>
+                            </select>
+                        </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Select Hotel ID:</lable>
+                            <select class="form-control" id="cmbHotelID">
+                                <option selected="selected" disabled="disabled">-Select Hotel-</option>
+                                <span class="control-error" id="lblHotelID"></span>
+                            </select>
+                        </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Select User ID:</lable>
+                            <select class="form-control" id="cmbUserId">
+                                <option selected="selected" disabled="disabled">-Select User-</option>
+                                <span class="control-error" id="lblUserselectid"></span>
+                            </select>
+                        </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Travel Package  Value:</lable>
+                            <input type="text" id="txtPackageValue0" class="form-control">
+
+                        </div>
+                    </div>
+
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Travel Package Paid Value:</lable>
+                            <input type="text" id="txtPackagePaidValue0" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package Need Guide:</lable>
+                            <input type="text" id="txtPackageNeedGuide0" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package With Pet:</lable>
+                            <input type="text" id="txtPackageWithPet" class="form-control">
+
+                        </div>
+                    </div>
+                      <div class="row p-2 mt-3">
+                          <div class="form-group col-12">
+                              <lable> Trave Package Head Count:</lable>
+                               <input type="text" id="txtPackageHeadCount" class="form-control">
+
+                          </div>
+                      </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package No Of Child:</lable>
+                            <input type="text" id="txtPackageNoChild" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package No Of Adult:</lable>
+                            <input type="text" id="txtPackageNoAdult" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>full_double_Opt_1:</lable>
+                            <input type="text" id="txtopt1" class="form-control">
+
+                        </div>
+                    </div>
+
+                        <div class="row p-2 mt-3">
+                            <div class="form-group col-12">
+                                <lable>half_double_Opt_2:</lable>
+                                <input type="text" id="txtOpt2" class="form-control">
+
+                            </div>
+                        </div>
+
+                        <div class="row p-2 mt-3">
+                            <div class="form-group col-12">
+                                <lable>full_triple_Opt_3:</lable>
+                                <input type="text" id="txtOpt3" class="form-control">
+
+                            </div>
+                        </div>
+
+                        <div class="row p-2 mt-3">
+                            <div class="form-group col-12">
+                                <lable>half_triple_Opt_4:</lable>
+                                <input type="text" id="txtOpt4" class="form-control">
+
+                            </div>
+                        </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package Start Date:</lable>
+                            <input type="date" id="txtPackageStartDate" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package End Date:</lable>
+                            <input type="date" id="txtPackageEndDate" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable> Trave Package Pace Date:</lable>
+                            <input type="date" id="txtPackagePaceDate" class="form-control">
+
+                        </div>
+                    </div>
+
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <button type="button" class="btn btn-outline-success fw-bold" id="btnPackageAdd">Add</button>
+                            <button type="button" class="btn btn-outline-warning fw-bold" id="btnPackageUpdate">UPDATE</button>
+                            <button type="button" class="btn btn-outline-danger fw-bold" id="btnPackageDelete">DELETE</button>
+                            <button type="button" class="btn btn-warning fw-bold" id="btnPackageGetAll">GetAll</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-6">
+            <table id="tblPackage" class="table table-bordered table-hover border mt-2 p-3 ">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th scope="col">Package ID</th>
+                    <th scope="col">category</th>
+                    <th scope="col">Ares</th>
+                    <th scope="col">Guide ID</th>
+                    <th scope="col">Vehicle ID</th>
+                    <th scope="col">Hotel ID</th>
+                    <th scope="col">User ID</th>
+                    <th scope="col"> Package Value</th>
+                    <th scope="col"> Package Paid Value</th>
+                    <th scope="col"> Need Guide</th>
+                    <th scope="col"> Packge With Pet</th>
+                    <th scope="col"> Head Count</th>
+                    <th scope="col"> No Child</th>
+                    <th scope="col"> No Adult</th>
+                    <th scope="col"> full_double_Opt_1</th>
+                    <th scope="col"> half_double_Opt_2</th>
+                    <th scope="col"> full_triple_Opt_3</th>
+                    <th scope="col"> half_triple_Opt_4</th>
+                    <th scope="col"> Start Date</th>
+                    <th scope="col"> End Date</th>
+                    <th scope="col"> Pace Date</th>
+                </tr>
+                </thead>
+                <tbody class="bg-secondary text-white" id="tblCustomerTbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</div>
+  </div>
+  </div>
+ </div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="bootstrap/js/jquery/jquery-3.6.0.js"></script>
+ <script src="js/user-details.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

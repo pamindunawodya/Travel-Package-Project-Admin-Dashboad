@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+
+        .form-group {
+            width: 150%; /* Adjust this value to your preference */
+        }
+
+        .form-group input[type="text"] {
+            width: 100%; /* Adjust this value to your preference */
+        }
+
+        html,body{
+            height: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .mynav{
+            color: #fff;
+        }
+
+        .mynav li a {
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+            padding: 8px 5px;
+        }
+
+        .mynav li a.active{
+            background: rgba(255,255,255,0.2);
+        }
+
+        .mynav li a:hover{
+            background: rgba(255,255,255,0.2);
+        }
+
+        .mynav li a i{
+            width: 55px;
+            text-align: center;
+        }
+
+        .notification-badge{
+            background-color: rgba(255,255,255,0.7);
+            float: right;
+            color: #222;
+            font-size: 14px;
+            padding: 0px 8px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-0 d-flex h-500">
+    <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-success text-white offcanvas-md offcanvas-start" style="width: 280px;">
+        <a href="#" class="navbar-brand">
+            <h5><i class="fa-solid fa-bomb me-2" style="font-size: 28px;"></i> Next Travel Pvt. Ltd </h5>
+        </a>
+        <hr>
+        <ul class="mynav nav nav-pills flex-column mb-auto">
+            <li class="nav-item mb-1">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-plane" style="color: #ffffff;"></i>
+                    Admin Dashboard
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a href="../../User-FrontEnd/src/html/UserAdmin/navbaruser.html" class="">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    User
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a href="../../Hotel-FrontEnd/src/navbarhotel.html" class="">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    Hotel
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a href="../../Vehicle-FrontEnd/src/navbarvehicle.html" class="">
+                    <i class="fa-solid fa-star"></i>
+                    Vehicle
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a href="../../guide-service-FrontEnd/src/navbarguide.html" class="">
+                    <i class="fa-solid fa-person" style="color: #ffffff;"></i>
+                    Guide
+                </a>
+            </li>
+            <li class="nav-item mb-1">
+                <a href="../../Travel-Package-Front_End/src/navbarpackage.html" class="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Travel Package
+                </a>
+            </li>
+
+
+        </ul>
+        <hr>
+        <div class="d-flex">
+            <img src="img/profile_user.jpeg" class="img-fluid rounded me-2" width="50px" alt="">
+            <span>
+                    <h6 class="mt-1 mb-0"> Pamindu Nawodya</h6>
+                    <small>All Right Reserved  </small>
+                </span>
+        </div>
+    </div>
+
+    <div class="bg-light flex-fill">
+        <div class="p-2 d-md-none d-flex text-white bg-success">
+            <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <span class="ms-3">REMOTE DEV</span>
+        </div>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-danger" href="#" id="btnDashboard">Hotel Admin DashBoard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn btn-success my-2 mx-2" aria-current="page" href="../../Vehicle-FrontEnd/src/index.html" id="btnCustomer">User</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info text-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--Customer Form-->
+
+        <div class="container-fluid mt-5" id="customerform">
+            <h1 class="mx-3">Hotel Form</h1>
+            <div class="row mt-3 p-3">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="bg-white card">
+                        <div class="bg-dark card-header text-white" style="font-size: 25px">
+                            Hotel Details
+                        </div>
+                        <div class="card-body bg-white text-dark">
+                            <div class="row p-3 mt-3">
+                                <div class="form-group col-6">
+                                    <lable> Name:</lable>
+                                    <input type="text" id="txtName0" class="form-control">
+                                    <span class="control-error" id="lblhotelname"></span>
+                                </div>
+                                <div class="form-group col-6">
+                                    <lable>Category :</lable>
+                                    <input type="text" id="txtCategory0" class="form-control">
+                                    <span class="control-error" id="lblhotelcategory"></span>
+                                </div>
+                            </div>
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Location:</lable>
+                                    <input type="text" id="txtLocation0" class="form-control">
+                                    <span class="control-error" id="lbllocation"></span>
+                                </div>
+                            </div>
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Contact:</lable>
+                                    <input type="text" id="txtContact0" class="form-control">
+                                    <span class="control-error" id="lblcontact"></span>
+                                </div>
+                            </div>
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>E-mail:</lable>
+                                    <input type="text" id="txtEmail0" class="form-control">
+                                    <span class="control-error" id="lblemail"></span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Pets Allows OR Not:</lable>
+                                    <input type="text" id="txtpets0" class="form-control">
+                                    <span class="control-error" id="lblpets"></span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <label for="txtHotelImage0" class="form-label "> Hotel Image</label>
+                                    <input style="border: 1px solid gray" class="form-control  " type="file" id="txtHotelImage0">
+                                    <span class="control-error" id="lblhotelImage"></span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Option 1:</lable>
+                                    <input type="text" id="txtOption1" class="form-control">
+                                    <span class="control-error" id="lbloption1"></span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Option 2:</lable>
+                                    <input type="text" id="txtOption2" class="form-control">
+                                    <span class="control-error" id="lbloption2"></span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <lable>Option 3:</lable>
+                                    <input type="text" id="txtOption3" class="form-control">
+                                    <span class="control-error" id="lbloption3"></span>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row p-2 mt-3">
+                                <div class="form-group col-12">
+                                    <button type="button" class="btn btn-outline-success fw-bold" id="btnHotelAdd">Add</button>
+                                    <button type="button" class="btn btn-outline-warning fw-bold" id="btnHotelUpdate">UPDATE</button>
+                                    <button type="button" class="btn btn-outline-danger fw-bold" id="btnHotelDelete">DELETE</button>
+                                    <button type="button" class="btn btn-warning fw-bold" id="btnHotelGetAll">GetAll</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-6">
+                    <table id="tblUser" class="table table-bordered table-hover border mt-2 p-3 ">
+                        <thead class="bg-primary text-white">
+                        <tr>
+                            <th scope="col"> id</th>
+                            <th scope="col"> Name</th>
+                            <th scope="col"> category</th>
+                            <th scope="col">location</th>
+                            <th scope="col">contact</th>
+                            <th scope="col">e-mail</th>
+                            <th scope="col">pets Allow OR Not</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Option 1</th>
+                            <th scope="col">Option 2</th>
+                            <th scope="col">Option 3</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-secondary text-white" id="tblCustomerTbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+
+<script src="html/js/jquery-3.4.1.min.js"></script>
+<script src="../src/js/hoteladdform.js"></script>
+
+</body>
+</html>

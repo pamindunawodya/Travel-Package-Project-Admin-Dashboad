@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>In-memory User Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../src/assests/vendor/bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand text-danger" href="#" id="btnDashboard">User Admin DashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-info" aria-current="page" href="#customerform"
+                       id="btnCustomer">User Form</a>
+                </li>
+
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info text-dark" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<!--Customer Form-->
+
+<div class="container-fluid mt-5" id="customerform">
+    <h1 class="mx-3">User Form</h1>
+    <div class="row mt-3 p-3">
+        <div class="col-xl-4 col-lg-6">
+            <div class="bg-white card">
+                <div class="bg-dark card-header text-white" style="font-size: 25px">
+                    User Details
+                </div>
+                <div class="card-body bg-white text-dark">
+                    <div class="row p-3 mt-3">
+                        <div class="form-group col-6">
+                            <lable>User Name:</lable>
+                            <input type="text" id="txtName0" class="form-control">
+                            <span class="control-error" id="lblusername"></span>
+                        </div>
+                        <div class="form-group col-6">
+                            <lable>User Address:</lable>
+                            <input type="text" id="txtSuerAddress0" class="form-control">
+                            <span class="control-error" id="lbluseraddress"></span>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Customer Contact:</lable>
+                            <input type="text" id="txtUserContact0" class="form-control">
+                            <span class="control-error" id="lblcontact"></span>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Customer Email:</lable>
+                            <input type="text" id="txtUserEmail0" class="form-control">
+                            <span class="control-error" id="lbluserEmail"></span>
+                        </div>
+                    </div>
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <lable>Customer Password:</lable>
+                            <input type="text" id="txtUserPass0" class="form-control">
+                            <span class="control-error" id="lbluserpass"></span>
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                        <label for="register-form-NIC-image0" class="form-label "> upload your nic or passport image</label>
+                        <input style="border: 1px solid gray" class="form-control  " type="file" id="register-form-NIC-image0">
+                            <span class="control-error" id="lbluseruploadnicImage"></span>
+                        </div>
+                    </div>
+
+                    <div class="row p-2 mt-3">
+                        <div class="form-group col-12">
+                            <button type="button" class="btn btn-outline-success fw-bold" id="btnCustomerAdd">Add</button>
+                            <button type="button" class="btn btn-outline-warning fw-bold" id="btnCustomerUpdate">UPDATE</button>
+                            <button type="button" class="btn btn-outline-danger fw-bold" id="btnCustomerDelete">DELETE</button>
+                            <button type="button" class="btn btn-warning fw-bold" id="btnCustomerGetAll">GetAll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-6">
+            <table id="tblUser" class="table table-bordered table-hover border mt-2 p-3 ">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th scope="col">User Name</th>
+                    <th scope="col">User Address</th>
+                    <th scope="col">User Contact</th>
+                    <th scope="col">User Email</th>
+                    <th scope="col">User Password</th>
+                    <th scope="col">User Nic Image</th>
+                </tr>
+                </thead>
+                <tbody class="bg-secondary text-white" id="tblCustomerTbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="../../assests/boostrap/js/jquery-3.6.0.js"></script>
+
+
+
+<!--<script src="js/customer.js"></script>-->
+<script src="js/UserHandler.js"></script>
+
+</body>
+</html>
